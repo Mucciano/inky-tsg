@@ -1,0 +1,11 @@
+query {
+    emailData: getCrowdFundingEmailList {
+        items {
+            myName
+            video
+            videoHtml
+            whyISupportIirr
+            aboutMe
+        }
+    }
+}
