@@ -1,0 +1,9 @@
+templatePath: src
+staticPath: static
+buildPath: build
+
+routes:
+  email:
+    path: /email
+    template: email.html
+    context: email.graphql
