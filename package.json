@@ -1,0 +1,19 @@
+{
+  "name": "inky-tsg",
+  "version": "1.0.0",
+  "description": "inky and css-inliner combined with tsg",
+  "main": "index.js",
+  "author": "nick palmucci",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "cheerio": "^1.0.0-rc.2",
+    "inky": "^1.3.7",
+    "inline-css": "^2.2.3",
+    "takeshape-cli": "^4.8.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "watch": "yarn start || browser-sync start --http --server 'build' --port 5000 --files 'build/**/*'--reload-debounce"
+  }
+}
