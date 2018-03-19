@@ -38,6 +38,8 @@ email.then(function(string) {
         })
     });
     inlinedEmail.then(function(htmlString) {
+        fs.mkdirSync('build');
+
         var htmlStream = fs.createWriteStream('build/test.html');
         htmlStream.write(htmlString);
         htmlStream.end();
